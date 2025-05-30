@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Captain Crypto",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://yt3.googleusercontent.com/m7pjp-TVx1Vs5pCzcWq2J8UUG6ggIXLpq4PFpwYgiE1IBDUhPyOXqVDJ6p-b9pDJkMp7DK3VcYU=s160-c-k-c0x00ffffff-no-rj",
+      "sha256": "cfe3cede525390c464e5a2230b1acef02b5b57c4cd12eac91270f7a6c4a66f96"
+    },
+    "motivations": "I want to be a DRep because I believe in Cardano’s vision to revolutionize global systems through decentralization, transparency, and innovation. Since 2018, I have been deeply involved in the ecosystem, starting as a stake pool operator (PARAD) and actively supporting the network’s growth. I have witnessed Cardano’s evolution and understand its potential to reshape industries, empower communities, and drive financial inclusion worldwide. By becoming a DRep, I aim to ensure fair governance, responsible funding, and the continuous growth of Cardano as a truly decentralized and impactful global platform.",
+    "objectives": "As a DRep, I stand for decentralization, responsible budgeting, and innovation. True decentralization ensures governance remains community-driven, transparent, and fair, empowering all stakeholders. Responsible budgeting means allocating funds efficiently and prioritizing impactful projects that foster long-term growth while ensuring transparency and accountability. Innovation drives Cardano forward, supporting scalable, real-world solutions that enhance adoption and usability. I am committed to empowering the community, protecting the treasury, and driving meaningful progress to create a stronger, decentralized, and sustainable Cardano.\n\n",
+    "paymentAddress": "addr1q9geev8z5mwl48vve8jypywrwyw9rnwvc6563ecjfdm5frhacvj7yv7tpc8cfm85us46rj3zx4408az5cahe2tysxnsqlu65rf",
+    "qualifications": "### **Qualifications**  \n\n- **Stake Pool Operator (PARAD)** – Actively contributing to Cardano’s decentralization and network security since 2018.  \n- **Catalyst Project Developer** – Engaged in governance and funding initiatives, supporting innovative projects within the ecosystem.  \n- **Web 2 Developer** – Experienced in building applications and systems, with a strong technical background.  \n- **Web 3 Learner** – Expanding my skills in blockchain and smart contract development to actively contribute to Cardano’s future.  \n\nMy diverse experience allows me to **bridge the gap between traditional and decentralized systems**, ensuring informed decision-making and effective governance as a DRep.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Captain Crypto ",
+        "uri": "https://www.youtube.com/@CaptainCrypto-ADA"
+      },
+      {
+        "@type": "Identity",
+        "label": "Captain Crypto",
+        "uri": "https://github.com/webnettricks/CaptainCrypto/blob/main/Captain%20Crypto.jsonld"
+      }
+    ]
+  }
+}
