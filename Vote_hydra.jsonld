@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I voted YES because Hydra is critical scaling infrastructure for Cardano.\n\nCardano needs more than just a secure Layer 1 if it wants to compete for high-performance use cases like DeFi, gaming, AI agent payments, micropayments, point-of-sale, and institutional applications. Hydra helps solve major issues around speed, transaction cost, and user experience by enabling sub-second finality, near-zero fees, and higher throughput while still settling back to Cardano L1.\n\nThis proposal supports production hardening, performance improvements, operational tools, developer experience, and ecosystem support for Hydra v2. That matters because real projects are already building on or evaluating Hydra, and Cardano needs to keep those builders instead of losing them to faster competing ecosystems.\n\nI also support the milestone-gated structure, third-party assurance, and oversight through Intersect. The funding ask is significant, but if properly managed and delivered, this is the type of infrastructure investment that can grow Cardano’s utility, transaction activity, TVL, developer adoption, and long-term competitiveness.\n\nFor those reasons, I voted YES.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}
